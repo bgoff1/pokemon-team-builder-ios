@@ -13,6 +13,7 @@
 		1D102348225D1A99000A33DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D102347225D1A99000A33DF /* Assets.xcassets */; };
 		1D10234B225D1A99000A33DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D102349225D1A99000A33DF /* LaunchScreen.storyboard */; };
 		1D3E9EC1225D2803005A25B6 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E9EC0225D2803005A25B6 /* CollectionViewController.swift */; };
+		1D70246E225D481100B09244 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D70246D225D481000B09244 /* pokemon.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1D10234A225D1A99000A33DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D10234C225D1A99000A33DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3E9EC0225D2803005A25B6 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1D70246D225D481000B09244 /* pokemon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = pokemon.json; path = ../../../../../Downloads/pokemon.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1D102347225D1A99000A33DF /* Assets.xcassets */,
 				1D102349225D1A99000A33DF /* LaunchScreen.storyboard */,
 				1D10234C225D1A99000A33DF /* Info.plist */,
+				1D70246D225D481000B09244 /* pokemon.json */,
 			);
 			path = "pokemon-team-builder";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				1D10234B225D1A99000A33DF /* LaunchScreen.storyboard in Resources */,
 				1D102348225D1A99000A33DF /* Assets.xcassets in Resources */,
 				1D102346225D1A98000A33DF /* Main.storyboard in Resources */,
+				1D70246E225D481100B09244 /* pokemon.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
