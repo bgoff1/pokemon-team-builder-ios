@@ -9,22 +9,96 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var buttonn: UIButton!
-    @IBOutlet weak var image: UIImageView!
-    let strBase64 = "iVBORw0KGgoAAAANSUhEUgAAAGAAAABgBAMAAAAQtmoLAAAAMFBMVEUAAAAQEBAYSkoxc3M5lJRSYili1bRzrDGD7sWk1UGsADG9/3PNzc3uIDn/amL///87EAzGAAAAAXRSTlMAQObYZgAAAZ1JREFUWMPtlL9Lw0AUx9NUce1JwMGlLUfbrdAGcVAkl0fI5iSloxiOrg4hiJuWcP+AlPwLASm4lWzB0dG9/0HAunbwpbjfq6PcZ/5+8n5weZZlMBgMhv/F4b75KaOHj5L4ZppMWuT8Y1Gssge6gPmiSLKYINjtukBRvJ0kK5IQPrXHyGhwWxTZyz1BUGOlUjlQOyHRlwhDpSCUKq2FBWFqX6k5hKmU0Wkt6Hs6xwKgdsIqW8Q0IVQpoJBlSawdojmYKRz6+aMHXrYgCPZnqubh7HJZgtdPiALUwmYnTLTCxTpUoObrfAtCUISrZYAzRMtqCz7040S7pbM8kLjSvHoHANHXCx35C/Da0D8NfiyDO8yPGLjQhY7+dV/nUt512DdgiS4X+tfK/bzGBYEdcWhrhYbjv1aVC54D2BRBQAOnBeaAK7CKR/hHPYagwz0cgiAcyAg3KiQIhyZYrsQoD6I9BPAYh1oQQDlMgYw8K0Ch4bouRWhGtSCjll2WJeXqDYe8ZfUC7IYx0qlsMGbZm83Xfqee+HGDwWAwGP7KD5Vqm0oTWykbAAAAAElFTkSuQmCC"
+    
+    @IBOutlet weak var partyCollectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var dataArray: [Pokemon] = []
+    
+    var estimateWidth = 160.0
+    var cellMarginSize = 16.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image = parseImage(strBase64)
-        buttonn.setImage(image, for: .normal)
+        
+        addDataToArray()
+        
+        //self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        //        self.partyCollectionView.dataSource = self
+        
+        // Register cells
+        self.collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
+        //        self.partyCollectionView.register(UINib(nibName: "PartyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PartyCollectionViewCell")
+        
+        // Setup Grid View
+        self.setupGridView()
     }
     
-    func parseImage(_ base64String: String) -> UIImage {
-        let dataDecoded:NSData = NSData(base64Encoded: base64String, options: NSData.Base64DecodingOptions(rawValue: 0))!
-        return UIImage(data: dataDecoded as Data)!
+    func setupGridView() {
+        let flow = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
+        flow.minimumInteritemSpacing = CGFloat(self.cellMarginSize)
+        flow.minimumLineSpacing = CGFloat(self.cellMarginSize)
+        
     }
-
-
+    
+    func addDataToArray() {
+        if let path = Bundle.main.path(forResource: "pokemon", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                
+                if let jsonDictionary = json as? Dictionary<String, AnyObject> {
+                    if let pokemon = jsonDictionary["pokemon"] as? [AnyObject] {
+                        for poke in pokemon {
+                            let item = Pokemon.init(poke as! NSDictionary)
+                            dataArray.append(item)
+                        }
+                    }
+                }
+            }
+            catch {
+                print("error")
+            }
+        }
+    }
+    
 }
 
+extension ViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.dataArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+        
+        cell.setData(text: self.dataArray[indexPath.row].image)
+        
+        return cell
+    }
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = self.calculateWidth()
+        return CGSize(width: width, height: width)
+    }
+    
+    func calculateWidth() -> CGFloat {
+        let estimatedWidth = CGFloat(estimateWidth)
+        let cellCount = floor(CGFloat(self.view.frame.size.width / estimatedWidth))
+        
+        let margin = CGFloat(cellMarginSize * 2)
+        let width = (self.view.frame.size.width - CGFloat(cellMarginSize) * (cellCount - 1) - margin) / cellCount
+        
+        return width
+    }
+    
+    /*
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+     print("User tapped on pokemon \(dataArray[indexPath.row].name)")
+     }
+     */
+    
+}
