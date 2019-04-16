@@ -10,10 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var partyCollectionView: UICollectionView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var partyMemberOne: UIButton!
+    @IBOutlet weak var partyMemberTwo: UIButton!
+    @IBOutlet weak var partyMemberThree: UIButton!
+    @IBOutlet weak var partyMemberFour: UIButton!
+    @IBOutlet weak var partyMemberFive: UIButton!
+    @IBOutlet weak var partyMemberSix: UIButton!
+    @IBAction func removePokemonFromParty(_ sender: UIButton) {
+        if (sender.currentImage != nil) {
+            sender.setImage(nil, for: [])
+            party.remove(at: sender.tag - 1)
+        }
+    }
     var dataArray: [Pokemon] = []
+    var party: [Pokemon] = []
     
     var estimateWidth = 160.0
     var cellMarginSize = 16.0
@@ -23,13 +35,10 @@ class ViewController: UIViewController {
         
         addDataToArray()
         
-        //self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        //        self.partyCollectionView.dataSource = self
         
         // Register cells
         self.collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
-        //        self.partyCollectionView.register(UINib(nibName: "PartyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PartyCollectionViewCell")
         
         // Setup Grid View
         self.setupGridView()
@@ -47,6 +56,22 @@ class ViewController: UIViewController {
     @objc func tap(sender: UITapGestureRecognizer) {
         if let indexPath = self.collectionView?.indexPathForItem(at: sender.location(in: self.collectionView)) {
             print(dataArray[indexPath.row].name)
+            if party.count <= 6 {
+                party.append(dataArray[indexPath.row])
+            }
+        }
+        updateButtons()
+    }
+    
+    func getImageFromString(_ text: String) -> UIImage {
+        let dataDecoded = Data(base64Encoded: text, options: .ignoreUnknownCharacters)!
+        let decodedImage = UIImage(data: dataDecoded)!
+        return decodedImage
+    }
+    
+    func updateButtons() {
+        if party.count == 1 {
+            partyMemberOne.setImage(getImageFromString(party[0].image), for: .normal)
         }
     }
     
@@ -102,11 +127,4 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         
         return width
     }
-    
-    /*
-     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-     print("User tapped on pokemon \(dataArray[indexPath.row].name)")
-     }
-     */
-    
 }
