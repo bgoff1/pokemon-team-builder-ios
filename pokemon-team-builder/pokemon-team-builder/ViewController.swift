@@ -18,10 +18,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var partyMemberFour: UIButton!
     @IBOutlet weak var partyMemberFive: UIButton!
     @IBOutlet weak var partyMemberSix: UIButton!
+    
+    var buttons: [UIButton] = []
+    
     @IBAction func removePokemonFromParty(_ sender: UIButton) {
         if (sender.currentImage != nil) {
             sender.setImage(nil, for: [])
-            party.remove(at: sender.tag - 1)
+            if sender.tag - 1 > party.count - 1 {
+                party.remove(at: party.count - 1)
+            } else {
+                party.remove(at: sender.tag - 1)
+            }
         }
     }
     var dataArray: [Pokemon] = []
@@ -51,16 +58,15 @@ class ViewController: UIViewController {
         flow.minimumInteritemSpacing = CGFloat(self.cellMarginSize)
         flow.minimumLineSpacing = CGFloat(self.cellMarginSize)
         
+        buttons = [partyMemberOne, partyMemberTwo, partyMemberThree, partyMemberFour, partyMemberFive, partyMemberSix]
     }
     
     @objc func tap(sender: UITapGestureRecognizer) {
         if let indexPath = self.collectionView?.indexPathForItem(at: sender.location(in: self.collectionView)) {
             print(dataArray[indexPath.row].name)
-            if party.count <= 6 {
-                party.append(dataArray[indexPath.row])
-            }
+            print(party.count)
+            updateButtons(indexPath.row)
         }
-        updateButtons()
     }
     
     func getImageFromString(_ text: String) -> UIImage {
@@ -69,10 +75,17 @@ class ViewController: UIViewController {
         return decodedImage
     }
     
-    func updateButtons() {
-        if party.count == 1 {
+    func updateButtons(_ index: Int) {
+        if party.count == 0 {
+            party.append(dataArray[index])
             partyMemberOne.setImage(getImageFromString(party[0].image), for: .normal)
+        } else if party.count < 6 {
+            party.append(dataArray[index])
+            buttons[party.count - 1].setImage(getImageFromString(party[party.count - 1].image), for: .normal)
         }
+    }
+    
+    func realignArray() {
     }
     
     func addDataToArray() {
