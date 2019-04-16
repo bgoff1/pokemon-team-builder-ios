@@ -33,6 +33,8 @@ class ViewController: UIViewController {
         
         // Setup Grid View
         self.setupGridView()
+        
+        self.collectionView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap)))
     }
     
     func setupGridView() {
@@ -40,6 +42,12 @@ class ViewController: UIViewController {
         flow.minimumInteritemSpacing = CGFloat(self.cellMarginSize)
         flow.minimumLineSpacing = CGFloat(self.cellMarginSize)
         
+    }
+    
+    @objc func tap(sender: UITapGestureRecognizer) {
+        if let indexPath = self.collectionView?.indexPathForItem(at: sender.location(in: self.collectionView)) {
+            print(dataArray[indexPath.row].name)
+        }
     }
     
     func addDataToArray() {
