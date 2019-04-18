@@ -26,8 +26,12 @@ class ViewController: UIViewController {
             sender.setImage(nil, for: [])
             if sender.tag - 1 > party.count - 1 {
                 party.remove(at: party.count - 1)
+                //realignArray()
+                updateButtons()
             } else {
                 party.remove(at: sender.tag - 1)
+              //  realignArray()
+                updateButtons()
             }
         }
     }
@@ -65,7 +69,10 @@ class ViewController: UIViewController {
         if let indexPath = self.collectionView?.indexPathForItem(at: sender.location(in: self.collectionView)) {
             print(dataArray[indexPath.row].name)
             print(party.count)
-            updateButtons(indexPath.row)
+            if(party.count < 5){
+            party.append(dataArray[indexPath.row])
+            updateButtons()
+            }
         }
     }
     
@@ -75,17 +82,22 @@ class ViewController: UIViewController {
         return decodedImage
     }
     
-    func updateButtons(_ index: Int) {
-        if party.count == 0 {
-            party.append(dataArray[index])
-            partyMemberOne.setImage(getImageFromString(party[0].image), for: .normal)
-        } else if party.count < 6 {
-            party.append(dataArray[index])
-            buttons[party.count - 1].setImage(getImageFromString(party[party.count - 1].image), for: .normal)
+    func updateButtons() {
+        for count in 0...party.count{
+            buttons[count].setImage(getImageFromString(party[count].image), for: .normal)
+            }
         }
-    }
+    
     
     func realignArray() {
+        
+        var holdArray: [Pokemon] = []
+        for count in 0...party.count{
+            if party[count] != nil{
+                holdArray.append(party[count])
+            }
+        }
+        party = holdArray
     }
     
     func addDataToArray() {
