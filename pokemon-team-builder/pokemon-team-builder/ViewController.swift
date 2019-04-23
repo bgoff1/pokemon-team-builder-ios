@@ -20,23 +20,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var partyMemberSix: UIButton!
     
     var buttons: [UIButton] = []
+    var party = PartyData()
     
     @IBAction func removePokemonFromParty(_ sender: UIButton) {
         if (sender.currentImage != nil) {
             sender.setImage(nil, for: [])
-            if sender.tag - 1 > party.count - 1 {
-                party.remove(at: party.count - 1)
-               
+            if sender.tag - 1 > party.partySize() - 1 {
+                party.removeMember(at: party.partySize() - 1)
+                
                 updateButtons()
             } else {
-                party.remove(at: sender.tag - 1)
-          
+                party.removeMember(at: sender.tag - 1)
+                
                 updateButtons()
             }
         }
     }
     var dataArray: [Pokemon] = []
-    var party: [Pokemon] = []
     
     var estimateWidth = 160.0
     var cellMarginSize = 16.0
@@ -68,10 +68,10 @@ class ViewController: UIViewController {
     @objc func tap(sender: UITapGestureRecognizer) {
         if let indexPath = self.collectionView?.indexPathForItem(at: sender.location(in: self.collectionView)) {
             print(dataArray[indexPath.row].name)
-            print(party.count)
-            if(party.count < 6){
-            party.append(dataArray[indexPath.row])
-            updateButtons()
+            print(party.partySize())
+            if (party.partySize() < 6) {
+                party.addPokemon(dataArray[indexPath.row])
+                updateButtons()
             }
         }
     }
@@ -84,16 +84,16 @@ class ViewController: UIViewController {
     
     func updateButtons() {
         for count in 0...buttons.count-1{
-            if count <= party.count-1{
-                buttons[count].setImage(getImageFromString(party[count].image), for: .normal)
+            if count <= party.partySize() - 1 {
+                buttons[count].setImage(getImageFromString(party.getMember(at: count).image), for: .normal)
                 buttons[count].backgroundColor = .white
-                }
+            }
             else{
                 buttons[count].setImage(nil, for: .normal)
                 buttons[count].backgroundColor = .gray
             }
-            }
         }
+    }
     
     
     

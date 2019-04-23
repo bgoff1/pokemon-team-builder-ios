@@ -18,6 +18,15 @@ struct Pokemon {
         self.number = dictionary["pokemonNumber"] as! Int
     }
     
+    init(name: String, types: [String], image: String, number: Int, generation: Int) {
+        self.name = name
+        self.types = types
+        self.image = image
+        self.number = number
+        self.generation = generation
+        self.games = []
+    }
+    
     let name: String
     let types: [String]
     let games: [String]
