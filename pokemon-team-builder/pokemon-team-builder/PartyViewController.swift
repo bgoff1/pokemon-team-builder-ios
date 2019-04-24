@@ -11,13 +11,9 @@ import UIKit
 class PartyViewController: UIViewController {
     
     var party = PartyData()
-
-    @IBOutlet weak var label123: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -26,8 +22,11 @@ class PartyViewController: UIViewController {
         party.loadPartyFromUserDefaults()
         print(party.partySize())
         if party.partySize() > 0 {
-            label123.text = party.getMember(at: 0).name
         }
+//        for item in party.getParty() {
+//            if item.isType("Flying") {
+//            }
+//        }
     }
 
     /*

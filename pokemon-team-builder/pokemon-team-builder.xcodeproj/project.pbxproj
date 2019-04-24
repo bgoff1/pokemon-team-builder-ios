@@ -12,6 +12,7 @@
 		1D102346225D1A98000A33DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D102344225D1A98000A33DF /* Main.storyboard */; };
 		1D102348225D1A99000A33DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D102347225D1A99000A33DF /* Assets.xcassets */; };
 		1D10234B225D1A99000A33DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D102349225D1A99000A33DF /* LaunchScreen.storyboard */; };
+		1D5B9CEC226FF2EC0071546A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B9CEB226FF2EC0071546A /* RoundedButton.swift */; };
 		1D70246E225D481100B09244 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D70246D225D481000B09244 /* pokemon.json */; };
 		1D73DB19225FC4A1001B7521 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73DB18225FC4A1001B7521 /* Pokemon.swift */; };
 		1D73DB1C225FC4E1001B7521 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73DB1A225FC4E1001B7521 /* CollectionViewCell.swift */; };
@@ -28,6 +29,7 @@
 		1D102347225D1A99000A33DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D10234A225D1A99000A33DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D10234C225D1A99000A33DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D5B9CEB226FF2EC0071546A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		1D70246D225D481000B09244 /* pokemon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = pokemon.json; path = ../../pokemon.json; sourceTree = "<group>"; };
 		1D73DB18225FC4A1001B7521 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = SOURCE_ROOT; };
 		1D73DB1A225FC4E1001B7521 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				2262C81A226F8F710003C8D8 /* PartyData.swift */,
 				2262C818226F8D090003C8D8 /* PartyViewController.swift */,
 				1D102344225D1A98000A33DF /* Main.storyboard */,
+				1D5B9CEB226FF2EC0071546A /* RoundedButton.swift */,
 				1D73DB18225FC4A1001B7521 /* Pokemon.swift */,
 				1D102347225D1A99000A33DF /* Assets.xcassets */,
 				1D102349225D1A99000A33DF /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 				1D73DB19225FC4A1001B7521 /* Pokemon.swift in Sources */,
 				2262C81B226F8F710003C8D8 /* PartyData.swift in Sources */,
 				1D73DB1C225FC4E1001B7521 /* CollectionViewCell.swift in Sources */,
+				1D5B9CEC226FF2EC0071546A /* RoundedButton.swift in Sources */,
 				1D102341225D1A98000A33DF /* AppDelegate.swift in Sources */,
 				2262C819226F8D090003C8D8 /* PartyViewController.swift in Sources */,
 			);

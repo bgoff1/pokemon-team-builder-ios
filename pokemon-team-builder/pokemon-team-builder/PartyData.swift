@@ -18,6 +18,10 @@ class PartyData{
         savePartyToUserDefaults()
     }
     
+    func getParty() -> [Pokemon] {
+        return party
+    }
+    
     func partySize() -> Int {
         return party.count
     }

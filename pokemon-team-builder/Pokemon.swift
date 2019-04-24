@@ -27,6 +27,10 @@ struct Pokemon {
         self.games = []
     }
     
+    func isType(_ type: String) -> Bool {
+        return types[0] == type || types.count > 1 && types[1] == type;
+    }
+    
     let name: String
     let types: [String]
     let games: [String]
