@@ -21,10 +21,11 @@ class ViewController: UIViewController {
     
     var buttons: [UIButton] = []
     var party = PartyData()
+    let pokeballImage = UIImage(named: "Pokeball small")?.addImagePadding(x: 46, y: 46)
     
     @IBAction func removePokemonFromParty(_ sender: UIButton) {
-        if (sender.currentImage != nil) {
-            sender.setImage(nil, for: [])
+        if (sender.currentImage != pokeballImage) {
+            sender.setImage(pokeballImage, for: [])
             if sender.tag - 1 > party.partySize() - 1 {
                 party.removeMember(at: party.partySize() - 1)
                 
@@ -55,6 +56,11 @@ class ViewController: UIViewController {
         self.setupGridView()
         
         self.collectionView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap)))
+        
+        for button in buttons {
+            button.setImage(pokeballImage, for: [])
+            print(button.image(for: .normal)!.size)
+        }
     }
     
     func setupGridView() {
@@ -82,11 +88,9 @@ class ViewController: UIViewController {
         for count in 0...buttons.count-1{
             if count <= party.partySize() - 1 {
                 buttons[count].setImage(getImageFromString(party.getMember(at: count).image), for: .normal)
-                buttons[count].backgroundColor = .white
             }
             else{
-                buttons[count].setImage(nil, for: .normal)
-                buttons[count].backgroundColor = .gray
+                buttons[count].setImage(pokeballImage, for: .normal)
             }
         }
     }
@@ -144,5 +148,20 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         let width = (self.view.frame.size.width - CGFloat(cellMarginSize) * (cellCount - 1) - margin) / cellCount
         
         return width
+    }
+}
+
+extension UIImage {
+    
+    func addImagePadding(x: CGFloat, y: CGFloat) -> UIImage? {
+        let width: CGFloat = size.width + x
+        let height: CGFloat = size.height + y
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: width, height: height), false, 0)
+        let origin: CGPoint = CGPoint(x: (width - size.width) / 2, y: (height - size.height) / 2)
+        draw(at: origin)
+        let imageWithPadding = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return imageWithPadding
     }
 }

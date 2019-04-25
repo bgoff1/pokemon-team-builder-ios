@@ -13,5 +13,7 @@ func getImageFromString(_ text:String) -> UIImage{
     let dataDecoded = Data(base64Encoded: text, options: .ignoreUnknownCharacters)!
     let decodedImage = UIImage(data: dataDecoded)!
     
+    print (decodedImage.size)
+    
     return decodedImage
 }

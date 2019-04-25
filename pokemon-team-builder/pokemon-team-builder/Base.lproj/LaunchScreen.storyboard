@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KOa-O9-qLt">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,29 +15,37 @@
             <objects>
                 <viewController id="KOa-O9-qLt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Y1-M9-wOO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pokemon Team Builder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMV-BA-Vrl">
-                                <rect key="frame" x="16" y="119" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By Sam Dillin and Judah Goff" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUA-lx-abp">
-                                <rect key="frame" x="119" y="157" width="137" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Sam Dillin and Judah Goff" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUA-lx-abp">
+                                <rect key="frame" x="139" y="165" width="137" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="Rty-5F-Wfh">
-                                <rect key="frame" x="100" y="246" width="175" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="Rty-5F-Wfh">
+                                <rect key="frame" x="100" y="258" width="214" height="240"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon Team Builder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMV-BA-Vrl">
+                                <rect key="frame" x="36" y="112.33333333333333" width="343" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rty-5F-Wfh" firstAttribute="top" secondItem="sUA-lx-abp" secondAttribute="bottom" constant="50" id="0hg-tb-0e2"/>
+                            <constraint firstItem="Rty-5F-Wfh" firstAttribute="centerY" secondItem="Bmt-Fi-sMs" secondAttribute="centerY" id="AR4-ne-zD5"/>
+                            <constraint firstItem="Bmt-Fi-sMs" firstAttribute="trailing" secondItem="Rty-5F-Wfh" secondAttribute="trailing" constant="100" id="EOG-PV-yfb"/>
+                            <constraint firstItem="sUA-lx-abp" firstAttribute="top" secondItem="VMV-BA-Vrl" secondAttribute="bottom" constant="25" id="Ecw-as-q4h"/>
+                            <constraint firstItem="Rty-5F-Wfh" firstAttribute="leading" secondItem="Bmt-Fi-sMs" secondAttribute="leading" constant="100" id="TWJ-QI-APa"/>
+                            <constraint firstItem="VMV-BA-Vrl" firstAttribute="leading" secondItem="Bmt-Fi-sMs" secondAttribute="leading" constant="36" id="duk-FI-jk0"/>
+                            <constraint firstItem="Bmt-Fi-sMs" firstAttribute="trailing" secondItem="sUA-lx-abp" secondAttribute="trailing" constant="138" id="ee0-AZ-S32"/>
+                            <constraint firstItem="Bmt-Fi-sMs" firstAttribute="trailing" secondItem="VMV-BA-Vrl" secondAttribute="trailing" constant="35" id="pms-ah-NdC"/>
+                            <constraint firstItem="sUA-lx-abp" firstAttribute="leading" secondItem="Bmt-Fi-sMs" secondAttribute="leading" constant="139" id="yB4-WJ-0i5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bmt-Fi-sMs"/>
                     </view>
                 </viewController>
