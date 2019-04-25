@@ -18,6 +18,7 @@
 		1D73DB1C225FC4E1001B7521 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73DB1A225FC4E1001B7521 /* CollectionViewCell.swift */; };
 		1D73DB1D225FC4E1001B7521 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D73DB1B225FC4E1001B7521 /* CollectionViewCell.xib */; };
 		1DA1165C227234F4006BDD8D /* types-map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1165B227234F4006BDD8D /* types-map.swift */; };
+		222421A622723FD70057C7EE /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222421A522723FD70057C7EE /* functions.swift */; };
 		2262C819226F8D090003C8D8 /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C818226F8D090003C8D8 /* PartyViewController.swift */; };
 		2262C81B226F8F710003C8D8 /* PartyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C81A226F8F710003C8D8 /* PartyData.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		1D73DB1A225FC4E1001B7521 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1D73DB1B225FC4E1001B7521 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		1DA1165B227234F4006BDD8D /* types-map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "types-map.swift"; sourceTree = "<group>"; };
+		222421A522723FD70057C7EE /* functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
 		2262C818226F8D090003C8D8 /* PartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
 		2262C81A226F8F710003C8D8 /* PartyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				1D73DB1B225FC4E1001B7521 /* CollectionViewCell.xib */,
 				1D102340225D1A98000A33DF /* AppDelegate.swift */,
 				1D102342225D1A98000A33DF /* ViewController.swift */,
+				222421A522723FD70057C7EE /* functions.swift */,
 				2262C81A226F8F710003C8D8 /* PartyData.swift */,
 				2262C818226F8D090003C8D8 /* PartyViewController.swift */,
 				1D102344225D1A98000A33DF /* Main.storyboard */,
@@ -166,6 +169,7 @@
 				1DA1165C227234F4006BDD8D /* types-map.swift in Sources */,
 				2262C81B226F8F710003C8D8 /* PartyData.swift in Sources */,
 				1D73DB1C225FC4E1001B7521 /* CollectionViewCell.swift in Sources */,
+				222421A622723FD70057C7EE /* functions.swift in Sources */,
 				1D5B9CEC226FF2EC0071546A /* RoundedButton.swift in Sources */,
 				1D102341225D1A98000A33DF /* AppDelegate.swift in Sources */,
 				2262C819226F8D090003C8D8 /* PartyViewController.swift in Sources */,
