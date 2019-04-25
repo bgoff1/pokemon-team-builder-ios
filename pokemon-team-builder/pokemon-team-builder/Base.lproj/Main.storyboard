@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uLB-p3-kLe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uLB-p3-kLe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,24 +19,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Wlv-Cv-l3t">
-                                <rect key="frame" x="5" y="20" width="372" height="81"/>
+                                <rect key="frame" x="5" y="20" width="420" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oto-Qj-F0g">
-                                        <rect key="frame" x="0.0" y="0.0" width="42" height="81"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="91"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IW-dO-2t0">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nk-hM-vIB">
-                                                <rect key="frame" x="0.0" y="20.5" width="42" height="40"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="50" height="50"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kk-2C-3Ni">
-                                                <rect key="frame" x="0.0" y="60.5" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="70.5" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -44,20 +44,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2nr-Yy-hWf">
-                                        <rect key="frame" x="66" y="0.0" width="42" height="81"/>
+                                        <rect key="frame" x="74" y="0.0" width="50" height="91"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLY-l0-86I">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojW-JG-oW2">
-                                                <rect key="frame" x="0.0" y="20.5" width="42" height="40"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="50" height="50"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIg-oW-KJ9">
-                                                <rect key="frame" x="0.0" y="60.5" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="70.5" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -65,20 +65,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d4m-zW-7YC">
-                                        <rect key="frame" x="132" y="0.0" width="42" height="81"/>
+                                        <rect key="frame" x="148" y="0.0" width="50" height="91"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PO-wD-2M9">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upg-GQ-RsB">
-                                                <rect key="frame" x="0.0" y="20.5" width="42" height="40"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="50" height="50"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSr-EP-4xn">
-                                                <rect key="frame" x="0.0" y="60.5" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="70.5" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -86,20 +86,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a6I-4q-wtp">
-                                        <rect key="frame" x="198" y="0.0" width="42" height="81"/>
+                                        <rect key="frame" x="222" y="0.0" width="50" height="91"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pq-xa-ub5">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-6z-kmF">
-                                                <rect key="frame" x="0.0" y="20.5" width="42" height="40"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="50" height="50"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpA-3i-PGg">
-                                                <rect key="frame" x="0.0" y="60.5" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="70.5" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -107,20 +107,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NUZ-6X-qdX">
-                                        <rect key="frame" x="264" y="0.0" width="42" height="81"/>
+                                        <rect key="frame" x="296" y="0.0" width="50" height="91"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY7-JI-kqu">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Fb-cxz">
-                                                <rect key="frame" x="0.0" y="20.5" width="42" height="40"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="50" height="50"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8do-eZ-8oe">
-                                                <rect key="frame" x="0.0" y="60.5" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="70.5" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -128,20 +128,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eOP-qj-1I3">
-                                        <rect key="frame" x="330" y="0.0" width="42" height="81"/>
+                                        <rect key="frame" x="370" y="0.0" width="50" height="91"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTx-35-nJd">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F34-b5-Ctr">
-                                                <rect key="frame" x="0.0" y="20.5" width="42" height="40"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="50" height="50"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TL-Qk-PA8">
-                                                <rect key="frame" x="0.0" y="60.5" width="42" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="70.5" width="50" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -479,6 +479,62 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="TypeButton1" destination="V8T-52-Pha" id="ZTI-GN-V4w"/>
+                        <outlet property="TypeButton10" destination="Lc5-Nz-QWt" id="ZpV-Jt-lBl"/>
+                        <outlet property="TypeButton11" destination="51C-5K-SKs" id="xNB-9H-23M"/>
+                        <outlet property="TypeButton12" destination="Xsc-CN-lyI" id="LDj-7g-eFT"/>
+                        <outlet property="TypeButton13" destination="gSv-Mc-hXH" id="9Tw-RP-IF9"/>
+                        <outlet property="TypeButton14" destination="GkH-Gc-0uf" id="taY-eF-OCX"/>
+                        <outlet property="TypeButton15" destination="0rB-lX-Kgj" id="qzO-oq-qFw"/>
+                        <outlet property="TypeButton16" destination="yCa-OZ-uXj" id="9QD-vM-adK"/>
+                        <outlet property="TypeButton17" destination="7Pf-6J-TNt" id="VTb-Bj-Ra7"/>
+                        <outlet property="TypeButton18" destination="LUa-6Y-Jvy" id="xoZ-re-QYz"/>
+                        <outlet property="TypeButton2" destination="3A9-aV-z5p" id="Pzd-G5-ohM"/>
+                        <outlet property="TypeButton3" destination="TcY-8d-1Sp" id="flM-kX-NUK"/>
+                        <outlet property="TypeButton4" destination="mAU-66-6Ef" id="KEo-Ba-iV2"/>
+                        <outlet property="TypeButton5" destination="jgY-gJ-rcN" id="Aoz-5A-4xT"/>
+                        <outlet property="TypeButton6" destination="cZ6-0k-hNT" id="mIA-xX-Lgq"/>
+                        <outlet property="TypeButton7" destination="7eG-XM-paq" id="ii1-9l-AQ4"/>
+                        <outlet property="TypeButton8" destination="eJM-td-2ii" id="eme-qK-Qx6"/>
+                        <outlet property="TypeButton9" destination="Fr8-Pc-PPr" id="6gR-5h-q3k"/>
+                        <outlet property="TypeLabel1" destination="6C2-u8-PHr" id="nsz-LB-W50"/>
+                        <outlet property="TypeLabel10" destination="wvF-Ag-GTM" id="IyF-dU-fgh"/>
+                        <outlet property="TypeLabel11" destination="NUI-QA-ngL" id="gWA-cE-VDY"/>
+                        <outlet property="TypeLabel12" destination="6wC-mZ-J0W" id="hIs-1g-KDS"/>
+                        <outlet property="TypeLabel13" destination="f2V-Nb-fW9" id="rwd-tL-xUA"/>
+                        <outlet property="TypeLabel14" destination="gBK-Jn-Lhu" id="kZO-mx-7fl"/>
+                        <outlet property="TypeLabel15" destination="vxB-YP-yqX" id="eqC-i6-NbM"/>
+                        <outlet property="TypeLabel16" destination="fQS-0e-M2A" id="zlf-Rd-y3L"/>
+                        <outlet property="TypeLabel17" destination="zYe-wl-vQy" id="WvO-Jy-m1w"/>
+                        <outlet property="TypeLabel18" destination="LFt-U5-3rN" id="oa2-TM-VKF"/>
+                        <outlet property="TypeLabel2" destination="LnC-wM-a8V" id="oBD-Ms-F1M"/>
+                        <outlet property="TypeLabel3" destination="Kic-Vu-eX2" id="SPE-lc-2ew"/>
+                        <outlet property="TypeLabel4" destination="OOB-7i-roM" id="Br0-NF-odi"/>
+                        <outlet property="TypeLabel5" destination="s0Y-dj-7ec" id="h5y-kP-Mcx"/>
+                        <outlet property="TypeLabel6" destination="AZ0-iq-Wm8" id="Z2i-g6-7Zo"/>
+                        <outlet property="TypeLabel7" destination="xSh-Xj-1Wr" id="6MG-vn-2ge"/>
+                        <outlet property="TypeLabel8" destination="Q9p-tA-plJ" id="3VF-P1-tuY"/>
+                        <outlet property="TypeLabel9" destination="EOb-t6-94N" id="dvz-kS-i3m"/>
+                        <outlet property="partyImageButton1" destination="6Nk-hM-vIB" id="uQa-4H-Rdi"/>
+                        <outlet property="partyImageButton2" destination="ojW-JG-oW2" id="guJ-I8-iOj"/>
+                        <outlet property="partyImageButton3" destination="upg-GQ-RsB" id="smW-k2-FW4"/>
+                        <outlet property="partyImageButton4" destination="Ves-6z-kmF" id="KcB-X0-LBp"/>
+                        <outlet property="partyImageButton5" destination="0bd-Fb-cxz" id="kwb-lF-NHX"/>
+                        <outlet property="partyImageButton6" destination="F34-b5-Ctr" id="JzM-nJ-yfv"/>
+                        <outlet property="partyNameLabel1" destination="6IW-dO-2t0" id="8bx-D5-0ZG"/>
+                        <outlet property="partyNameLabel2" destination="bLY-l0-86I" id="EW8-ke-fRg"/>
+                        <outlet property="partyNameLabel3" destination="7PO-wD-2M9" id="1KD-y8-D92"/>
+                        <outlet property="partyNameLabel4" destination="2pq-xa-ub5" id="QME-Bs-azr"/>
+                        <outlet property="partyNameLabel5" destination="pY7-JI-kqu" id="iek-si-AcV"/>
+                        <outlet property="partyNameLabel6" destination="kTx-35-nJd" id="A0E-t1-z5X"/>
+                        <outlet property="partyTypeBox1" destination="9Kk-2C-3Ni" id="cJO-FX-zPr"/>
+                        <outlet property="partyTypeBox2" destination="EIg-oW-KJ9" id="rgG-US-9Eb"/>
+                        <outlet property="partyTypeBox3" destination="hSr-EP-4xn" id="WlI-G3-V20"/>
+                        <outlet property="partyTypeBox4" destination="NpA-3i-PGg" id="z4R-u6-aki"/>
+                        <outlet property="partyTypeBox5" destination="8do-eZ-8oe" id="U12-Kc-6tg"/>
+                        <outlet property="partyTypeBox6" destination="7TL-Qk-PA8" id="zIE-Bb-9Id"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uH8-Ul-9M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -643,7 +699,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Pokeball small" width="40" height="40"/>
-        <image name="Pokeball thumbnail" width="23.200000762939453" height="23.200000762939453"/>
+        <image name="Pokeball small" width="50" height="50"/>
+        <image name="Pokeball thumbnail" width="29" height="29"/>
     </resources>
 </document>
