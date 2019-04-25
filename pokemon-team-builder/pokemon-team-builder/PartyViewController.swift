@@ -10,6 +10,7 @@ import UIKit
 
 class PartyViewController: UIViewController {
     
+    let pokeballImage = UIImage(named: "Pokeball small")
     
     @IBOutlet weak var partyNameLabel1: UILabel!
     @IBOutlet weak var partyNameLabel2: UILabel!
@@ -75,6 +76,9 @@ class PartyViewController: UIViewController {
     
     
     var party = PartyData()
+    var typesMap = TypesMap()
+    
+    var labelValues = Dictionary<String, Int>()
     
     var partyNameLabels : [UILabel] = []
     var partyImageButtons : [UIButton] = []
@@ -89,22 +93,108 @@ class PartyViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-          setupArrays()
+        setupArrays()
         party.loadPartyFromUserDefaults()
         var loadedParty = party.getParty()
         print(party.partySize())
         if party.partySize() > 0 {
-            for count in 0...party.partySize()-1{
+            for count in 0...party.partySize() - 1 {
                 partyNameLabels[count].text = loadedParty[count].name
                 partyImageButtons[count].setImage(getImageFromString(loadedParty[count].image), for: .normal)
             }
+            for count in party.partySize()..<6 {
+                partyImageButtons[count].setImage(pokeballImage, for: .normal)
+            }
         }
         
-      
-//        for item in party.getParty() {
-//            if item.isType("Flying") {
-//            }
-//        }
+        // for each pokemon in the party
+        for item in party.getParty() {
+            // for each of that pokemon's types
+            for type in item.types {
+                // if it is a type
+                if type.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
+                    // loop through all of the types
+                    // mult = attackers to str & wknses
+                    for mult in typesMap.typesMap {
+                        // and all other types
+                        if mult.key == type {
+                            // this pokemon is the attacker
+                            for m in mult.value {
+                                // loop through its str and wkn and add or sub from the table
+                                if m.key != type, m.value == 2 {
+                                    labelValues[mult.key] = (labelValues[mult.key] ?? 1) + 1
+                                } else if m.key != type, m.value == 0.5 {
+                                    labelValues[mult.key] = (labelValues[mult.key] ?? -1) - 1
+                                }
+                            }
+                        } else {
+                            checkWeaknesses(mult: mult, type: type)
+                        }
+                    }
+                }
+            }
+        }
+        
+        for value in labelValues {
+            TypeLabel[getTagName(value.key)].text! = String(value.value)
+        }
+    }
+    
+    func checkWeaknesses(mult: (key: String, value: Dictionary<String, Double>), type: String) {
+        for m in mult.value {
+            if m.key == type {
+                // this pokemon is defender
+                if m.value == 2 {
+                    labelValues[m.key] = (labelValues[m.key] ?? 1) - 1
+                    return
+                } else if m.value == 0.5 {
+                    labelValues[m.key] = (labelValues[m.key] ?? -1) + 1
+                    return
+                }
+            }
+        }
+    }
+    
+    func getTagName(_ type: String) -> Int {
+        switch (type) {
+        case "Normal":
+            return 0
+        case "Fire":
+            return 9
+        case "Water":
+            return 10
+        case "Electric":
+            return 12
+        case "Grass":
+            return 11
+        case "Ice":
+            return 14
+        case "Fighting":
+            return 1
+        case "Poison":
+            return 3
+        case "Ground":
+            return 4
+        case "Flying":
+            return 2
+        case "Psychic":
+            return 13
+        case "Bug":
+            return 6
+        case "Rock":
+            return 5
+        case "Ghost":
+            return 7
+        case "Dragon":
+            return 15
+        case "Dark":
+            return 16
+        case "Steel":
+            return 8
+        case "Fairy":
+            return 17
+        default: return -1
+        }
     }
     
     func setupArrays(){
@@ -134,16 +224,19 @@ class PartyViewController: UIViewController {
                      TypeLabel10, TypeLabel11, TypeLabel12,
                      TypeLabel13, TypeLabel14, TypeLabel15,
                      TypeLabel16, TypeLabel17, TypeLabel18]
+        for type in typesMap.types {
+            labelValues[type] = 0
+        }
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

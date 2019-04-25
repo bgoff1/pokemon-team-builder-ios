@@ -13,6 +13,26 @@ class TypesMap {
     init() {
         typesMap = addAll()
     }
+    var types: [String] = [
+        "Normal",
+        "Fire",
+        "Water",
+        "Electric",
+        "Grass",
+        "Ice",
+        "Fighting",
+        "Poison",
+        "Ground",
+        "Flying",
+        "Psychic",
+        "Bug",
+        "Rock",
+        "Ghost",
+        "Dragon",
+        "Dark",
+        "Steel",
+        "Fairy"
+    ]
     
     func addType(type name: String, _ map: Dictionary<String, Dictionary<String, Double>>, double listOfDouble: [String], half listOfHalf: [String], _ listOfNot: [String]? = nil) -> Dictionary<String, Dictionary<String, Double>> {
         var copy = map
