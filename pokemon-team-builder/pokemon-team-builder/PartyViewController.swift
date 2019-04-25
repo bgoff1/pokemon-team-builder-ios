@@ -89,7 +89,7 @@ class PartyViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+          setupArrays()
         party.loadPartyFromUserDefaults()
         var loadedParty = party.getParty()
         print(party.partySize())
@@ -100,7 +100,7 @@ class PartyViewController: UIViewController {
             }
         }
         
-        setupArrays()
+      
 //        for item in party.getParty() {
 //            if item.isType("Flying") {
 //            }
