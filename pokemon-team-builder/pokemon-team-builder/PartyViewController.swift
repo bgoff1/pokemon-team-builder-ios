@@ -91,8 +91,13 @@ class PartyViewController: UIViewController {
         super.viewDidAppear(animated)
         
         party.loadPartyFromUserDefaults()
+        var loadedParty = party.getParty()
         print(party.partySize())
         if party.partySize() > 0 {
+            for count in 0...party.partySize()-1{
+                partyNameLabels[count].text = loadedParty[count].name
+                partyImageButtons[count].setImage(getImageFromString(loadedParty[count].image), for: .normal)
+            }
         }
         
         setupArrays()

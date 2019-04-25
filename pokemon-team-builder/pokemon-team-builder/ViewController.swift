@@ -76,11 +76,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func getImageFromString(_ text: String) -> UIImage {
-        let dataDecoded = Data(base64Encoded: text, options: .ignoreUnknownCharacters)!
-        let decodedImage = UIImage(data: dataDecoded)!
-        return decodedImage
-    }
+
     
     func updateButtons() {
         for count in 0...buttons.count-1{
