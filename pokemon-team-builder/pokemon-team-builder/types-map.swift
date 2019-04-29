@@ -9,9 +9,9 @@
 import Foundation
 
 class TypesMap {
-    var typesMap = Dictionary<String, Dictionary<String, Double>>()
+    var typesChart = Dictionary<String, Dictionary<String, Double>>()
     init() {
-        typesMap = addAll()
+        typesChart = addAll()
     }
     var types: [String] = [
         "Normal",

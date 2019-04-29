@@ -18,25 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Wlv-Cv-l3t">
-                                <rect key="frame" x="12.5" y="25" width="350" height="165.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Wlv-Cv-l3t" userLabel="Party">
+                                <rect key="frame" x="10" y="30" width="355" height="75"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oto-Qj-F0g">
-                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="165.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="38.5" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IW-dO-2t0">
-                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nk-hM-vIB">
-                                                <rect key="frame" x="0.0" y="14.5" width="37.5" height="130.5"/>
+                                                <rect key="frame" x="0.0" y="14.5" width="38.5" height="40"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kk-2C-3Ni">
-                                                <rect key="frame" x="0.0" y="145" width="37.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="38.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -44,21 +44,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2nr-Yy-hWf">
-                                        <rect key="frame" x="62.5" y="0.0" width="37.5" height="165.5"/>
+                                        <rect key="frame" x="63.5" y="0.0" width="38" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLY-l0-86I">
-                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="14.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojW-JG-oW2">
-                                                <rect key="frame" x="0.0" y="14.5" width="37.5" height="130.5"/>
+                                                <rect key="frame" x="0.0" y="14.5" width="38" height="40"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIg-oW-KJ9">
-                                                <rect key="frame" x="0.0" y="145" width="37.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="38" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -66,21 +66,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d4m-zW-7YC">
-                                        <rect key="frame" x="125" y="0.0" width="37.5" height="165.5"/>
+                                        <rect key="frame" x="126.5" y="0.0" width="38.5" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PO-wD-2M9">
-                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upg-GQ-RsB">
-                                                <rect key="frame" x="0.0" y="14.5" width="37.5" height="130.5"/>
+                                                <rect key="frame" x="0.0" y="14.5" width="38.5" height="40"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSr-EP-4xn">
-                                                <rect key="frame" x="0.0" y="145" width="37.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="38.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -88,21 +88,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a6I-4q-wtp">
-                                        <rect key="frame" x="187.5" y="0.0" width="37.5" height="165.5"/>
+                                        <rect key="frame" x="190" y="0.0" width="38.5" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pq-xa-ub5">
-                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-6z-kmF">
-                                                <rect key="frame" x="0.0" y="14.5" width="37.5" height="130.5"/>
+                                                <rect key="frame" x="0.0" y="14.5" width="38.5" height="40"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpA-3i-PGg">
-                                                <rect key="frame" x="0.0" y="145" width="37.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="38.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -110,21 +110,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NUZ-6X-qdX">
-                                        <rect key="frame" x="250" y="0.0" width="37.5" height="165.5"/>
+                                        <rect key="frame" x="253.5" y="0.0" width="38" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY7-JI-kqu">
-                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="14.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Fb-cxz">
-                                                <rect key="frame" x="0.0" y="14.5" width="37.5" height="130.5"/>
+                                                <rect key="frame" x="0.0" y="14.5" width="38" height="40"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8do-eZ-8oe">
-                                                <rect key="frame" x="0.0" y="145" width="37.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="38" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -132,21 +132,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eOP-qj-1I3">
-                                        <rect key="frame" x="312.5" y="0.0" width="37.5" height="165.5"/>
+                                        <rect key="frame" x="316.5" y="0.0" width="38.5" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTx-35-nJd">
-                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F34-b5-Ctr">
-                                                <rect key="frame" x="0.0" y="14.5" width="37.5" height="130.5"/>
+                                                <rect key="frame" x="0.0" y="14.5" width="38.5" height="40"/>
                                                 <state key="normal" image="Pokeball small"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TL-Qk-PA8">
-                                                <rect key="frame" x="0.0" y="145" width="37.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="38.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -155,8 +155,18 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sD2-Fs-SUe">
-                                <rect key="frame" x="10" y="203" width="355" height="390"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Df0-Cu-tJq">
+                                <rect key="frame" x="10" y="145" width="355" height="34"/>
+                                <segments>
+                                    <segment title="Strengths"/>
+                                    <segment title="Weaknesses"/>
+                                </segments>
+                                <connections>
+                                    <action selector="flipToggle:" destination="0W7-PH-FJ2" eventType="valueChanged" id="oSh-Kb-vwM"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sD2-Fs-SUe" userLabel="Types">
+                                <rect key="frame" x="10" y="218" width="355" height="390"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hoL-Yd-VFU">
                                         <rect key="frame" x="0.0" y="0.0" width="77.5" height="390"/>
@@ -475,19 +485,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sD2-Fs-SUe" firstAttribute="top" secondItem="Wlv-Cv-l3t" secondAttribute="bottom" constant="12.5" id="3Bh-2q-0DC"/>
-                            <constraint firstItem="Pk2-pT-Iyc" firstAttribute="leading" secondItem="Wlv-Cv-l3t" secondAttribute="leading" constant="-12.5" id="IbH-y9-gKd"/>
-                            <constraint firstItem="Wlv-Cv-l3t" firstAttribute="trailing" secondItem="Pk2-pT-Iyc" secondAttribute="trailing" constant="-12.5" id="Sxj-YA-aXD"/>
-                            <constraint firstItem="Pk2-pT-Iyc" firstAttribute="trailing" secondItem="sD2-Fs-SUe" secondAttribute="trailing" constant="10" id="ZeT-2j-WQc"/>
-                            <constraint firstItem="sD2-Fs-SUe" firstAttribute="centerX" secondItem="Pk2-pT-Iyc" secondAttribute="centerX" id="dKt-Mq-pCh"/>
-                            <constraint firstItem="sD2-Fs-SUe" firstAttribute="leading" secondItem="Pk2-pT-Iyc" secondAttribute="leading" constant="10" id="iba-WL-ccx"/>
-                            <constraint firstItem="Wlv-Cv-l3t" firstAttribute="centerX" secondItem="Pk2-pT-Iyc" secondAttribute="centerX" id="iu4-YX-kWk"/>
-                            <constraint firstItem="Wlv-Cv-l3t" firstAttribute="top" secondItem="Pk2-pT-Iyc" secondAttribute="top" constant="5" id="l4b-3g-aHQ"/>
-                            <constraint firstItem="sD2-Fs-SUe" firstAttribute="bottom" secondItem="Pk2-pT-Iyc" secondAttribute="bottom" constant="-25" id="yEi-Lt-aXU"/>
+                            <constraint firstItem="Pk2-pT-Iyc" firstAttribute="trailing" secondItem="sD2-Fs-SUe" secondAttribute="trailing" constant="10" id="3OD-36-IMH"/>
+                            <constraint firstItem="Wlv-Cv-l3t" firstAttribute="top" secondItem="Pk2-pT-Iyc" secondAttribute="top" constant="10" id="6fh-7W-F52"/>
+                            <constraint firstItem="sD2-Fs-SUe" firstAttribute="top" secondItem="Df0-Cu-tJq" secondAttribute="bottom" constant="40" id="MVb-L5-n76"/>
+                            <constraint firstItem="Wlv-Cv-l3t" firstAttribute="leading" secondItem="Pk2-pT-Iyc" secondAttribute="leading" constant="10" id="NIg-M0-TWL"/>
+                            <constraint firstItem="Pk2-pT-Iyc" firstAttribute="trailing" secondItem="Wlv-Cv-l3t" secondAttribute="trailing" constant="10" id="Sqg-On-cNh"/>
+                            <constraint firstItem="Df0-Cu-tJq" firstAttribute="top" secondItem="Wlv-Cv-l3t" secondAttribute="bottom" constant="40" id="XNx-Yx-u3K"/>
+                            <constraint firstItem="Df0-Cu-tJq" firstAttribute="leading" secondItem="Pk2-pT-Iyc" secondAttribute="leading" constant="10" id="dEu-IF-ILp"/>
+                            <constraint firstItem="Pk2-pT-Iyc" firstAttribute="trailing" secondItem="Df0-Cu-tJq" secondAttribute="trailing" constant="10" id="qad-Fs-zVq"/>
+                            <constraint firstItem="Pk2-pT-Iyc" firstAttribute="bottom" secondItem="sD2-Fs-SUe" secondAttribute="bottom" constant="10" id="yGz-3p-tzg"/>
+                            <constraint firstItem="sD2-Fs-SUe" firstAttribute="leading" secondItem="Pk2-pT-Iyc" secondAttribute="leading" constant="10" id="zER-mO-LsQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pk2-pT-Iyc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Types" image="Pokeball thumbnail" id="Ao2-IK-8XQ">
+                    <tabBarItem key="tabBarItem" tag="46" title="Types" image="Pokeball thumbnail" id="Ao2-IK-8XQ">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -549,6 +560,7 @@
                         <outlet property="partyTypeBox4" destination="NpA-3i-PGg" id="z4R-u6-aki"/>
                         <outlet property="partyTypeBox5" destination="8do-eZ-8oe" id="U12-Kc-6tg"/>
                         <outlet property="partyTypeBox6" destination="7TL-Qk-PA8" id="zIE-Bb-9Id"/>
+                        <outlet property="strengthsWeaknesses" destination="Df0-Cu-tJq" id="Npz-5s-RDA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uH8-Ul-9M2" userLabel="First Responder" sceneMemberID="firstResponder"/>

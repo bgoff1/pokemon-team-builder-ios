@@ -59,8 +59,9 @@ class ViewController: UIViewController {
         
         for button in buttons {
             button.setImage(pokeballImage, for: [])
-            print(button.image(for: .normal)!.size)
         }
+        
+        party.clearParty()
     }
     
     func setupGridView() {
@@ -73,8 +74,6 @@ class ViewController: UIViewController {
     
     @objc func tap(sender: UITapGestureRecognizer) {
         if let indexPath = self.collectionView?.indexPathForItem(at: sender.location(in: self.collectionView)) {
-            print(dataArray[indexPath.row].name)
-            print(party.partySize())
             if (party.partySize() < 6) {
                 party.addPokemon(dataArray[indexPath.row])
                 updateButtons()
@@ -82,7 +81,7 @@ class ViewController: UIViewController {
         }
     }
     
-
+    
     
     func updateButtons() {
         for count in 0...buttons.count-1{
@@ -116,8 +115,7 @@ class ViewController: UIViewController {
                 print("error")
             }
         }
-    }
-    
+    }    
 }
 
 extension ViewController: UICollectionViewDataSource {

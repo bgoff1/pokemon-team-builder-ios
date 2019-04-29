@@ -37,6 +37,7 @@ class PartyData{
     
     func clearParty() {
         party.removeAll()
+        savePartyToUserDefaults()
     }
     
     func savePartyToUserDefaults(){
