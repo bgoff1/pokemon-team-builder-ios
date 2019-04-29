@@ -112,11 +112,13 @@ class PartyViewController: UIViewController {
             for count in 0...party.partySize() - 1 {
                 partyNameLabels[count].text = loadedParty[count].name
                 partyImageButtons[count].setImage(getImageFromString(loadedParty[count].image), for: .normal)
+                partyTypeBox[count].backgroundColor = .lightGray
             }
         }
         for count in party.partySize()..<6 {
             partyNameLabels[count].text = " "
             partyImageButtons[count].setImage(pokeballImage, for: .normal)
+            partyTypeBox[count].backgroundColor = .lightGray
         }
         checkAttacker()
         updateTypeLabels()
