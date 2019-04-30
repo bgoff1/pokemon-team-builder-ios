@@ -78,6 +78,9 @@ class PartyViewController: UIViewController {
     
     
     @IBAction func flipToggle(_ sender: UISegmentedControl) {
+        for label in labelValues {
+            labelValues[label.key] = 0
+        }
         if sender.selectedSegmentIndex == 0 {
             checkAttacker()
         } else if sender.selectedSegmentIndex == 1 {
@@ -85,10 +88,38 @@ class PartyViewController: UIViewController {
         }
         updateTypeLabels()
     }
+    
+    
+    @IBAction func CheckPartyMember(_ sender: UIButton) {
+        if strengthsWeaknesses.selectedSegmentIndex == 0 {
+            let attackMods = findAttackModifiers(sender.tag)
+            
+            for button in TypeButton{
+                if attackMods.contains(button.title(for: .normal)!){
+                    button.setTitleShadowColor(.blue, for: .normal)
+                    button.backgroundColor = .blue
+                }
+            }
+            
+            
+        } else if strengthsWeaknesses.selectedSegmentIndex == 1 {
+            let defenseMods = findDefenseModifier(sender.tag)
+            
+            for button in TypeButton{
+                if defenseMods.contains(button.title(for: .normal)!){
+                    button.setTitleShadowColor(.blue, for: .normal)
+                    button.backgroundColor = .blue
+                }
+            }
+            
+        }
+    }
+    
     var party = PartyData()
     var typesMap = TypesMap()
     
     var labelValues = Dictionary<String, Int>()
+    var memberValues = Dictionary<String, Int>()
     
     var partyNameLabels : [UILabel] = []
     var partyImageButtons : [UIButton] = []
@@ -137,9 +168,7 @@ class PartyViewController: UIViewController {
                         for m in mult.value {
                             if m.key == type {
                                 if m.value == 2 {
-                                    labelValues[m.key] = (labelValues[m.key] ?? 1) - 1
-                                } else if m.value == 0.5 {
-                                    labelValues[m.key] = (labelValues[m.key] ?? -1) + 1
+                                    labelValues[mult.key] = (labelValues[mult.key] ?? 1) - 1
                                 }
                             }
                         }
@@ -153,6 +182,70 @@ class PartyViewController: UIViewController {
         for value in labelValues {
             TypeLabel[getTagName(value.key)].text! = String(value.value)
         }
+    }
+    
+    func findAttackModifiers(_ partyIndex: Int) -> [String]{
+        let partyMember = party.getMember(at: partyIndex)
+        var array: [String] = []
+        
+        for type in partyMember.types {
+            // if it is a type
+            if type.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
+                // loop through all of the types
+                // mult = attackers to str & wknses
+                for mult in typesMap.typesChart {
+                    // and all other types
+                    if mult.key == type {
+                        for m in mult.value {
+                            if m.value == 2 {
+                                //memberValues[m.key] = (memberValues[m.key] ?? 1) + 1
+                                
+                                if(!array.contains(m.key) ){
+                                    array.append(m.key)
+                                }
+                                
+                            } else if m.value == 0.5 {
+                                
+                                if(!array.contains(m.key)){
+                                    array.append(m.key)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        return array
+    }
+    
+    func findDefenseModifier(_ partyIndex: Int)-> [String]{
+        
+        let partyMember = party.getMember(at: partyIndex)
+        var array: [String] = []
+        
+        for type in partyMember.types {
+            // if it is a type
+            if type.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
+                // loop through all of the types
+                // mult = attackers to str & wknses
+                for mult in typesMap.typesChart {
+                    // and all other types
+                    for m in mult.value {
+                        if m.key == type {
+                            if m.value == 2 {
+                                labelValues[mult.key] = (labelValues[mult.key] ?? 1) - 1
+                                
+                                if(!array.contains(mult.key)){
+                                array.append(mult.key)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return array
     }
     
     func checkAttacker() {

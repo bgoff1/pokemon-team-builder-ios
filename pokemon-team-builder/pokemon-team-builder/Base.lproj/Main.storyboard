@@ -34,6 +34,9 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nk-hM-vIB">
                                                 <rect key="frame" x="0.0" y="14.5" width="38.5" height="98"/>
                                                 <state key="normal" image="Pokeball small"/>
+                                                <connections>
+                                                    <action selector="CheckPartyMember:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="6MW-fR-bwC"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kk-2C-3Ni">
                                                 <rect key="frame" x="0.0" y="112.5" width="38.5" height="20.5"/>
@@ -53,9 +56,12 @@
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojW-JG-oW2">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojW-JG-oW2">
                                                 <rect key="frame" x="0.0" y="14.5" width="38" height="98"/>
                                                 <state key="normal" image="Pokeball small"/>
+                                                <connections>
+                                                    <action selector="CheckPartyMember:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="ECq-pG-tWb"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIg-oW-KJ9">
                                                 <rect key="frame" x="0.0" y="112.5" width="38" height="20.5"/>
@@ -75,9 +81,12 @@
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upg-GQ-RsB">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upg-GQ-RsB">
                                                 <rect key="frame" x="0.0" y="14.5" width="38.5" height="98"/>
                                                 <state key="normal" image="Pokeball small"/>
+                                                <connections>
+                                                    <action selector="CheckPartyMember:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="Joq-AI-4TE"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSr-EP-4xn">
                                                 <rect key="frame" x="0.0" y="112.5" width="38.5" height="20.5"/>
@@ -97,9 +106,12 @@
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-6z-kmF">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-6z-kmF">
                                                 <rect key="frame" x="0.0" y="14.5" width="38.5" height="98"/>
                                                 <state key="normal" image="Pokeball small"/>
+                                                <connections>
+                                                    <action selector="CheckPartyMember:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="kCQ-n7-VBr"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpA-3i-PGg">
                                                 <rect key="frame" x="0.0" y="112.5" width="38.5" height="20.5"/>
@@ -119,9 +131,12 @@
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Fb-cxz">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Fb-cxz">
                                                 <rect key="frame" x="0.0" y="14.5" width="38" height="98"/>
                                                 <state key="normal" image="Pokeball small"/>
+                                                <connections>
+                                                    <action selector="CheckPartyMember:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="FMJ-BW-NYs"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8do-eZ-8oe">
                                                 <rect key="frame" x="0.0" y="112.5" width="38" height="20.5"/>
@@ -141,9 +156,12 @@
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F34-b5-Ctr">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F34-b5-Ctr">
                                                 <rect key="frame" x="0.0" y="14.5" width="38.5" height="98"/>
                                                 <state key="normal" image="Pokeball small"/>
+                                                <connections>
+                                                    <action selector="CheckPartyMember:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="CJi-qI-VFV"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TL-Qk-PA8">
                                                 <rect key="frame" x="0.0" y="112.5" width="38.5" height="20.5"/>
