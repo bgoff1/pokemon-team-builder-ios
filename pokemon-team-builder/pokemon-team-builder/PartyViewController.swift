@@ -92,6 +92,8 @@ class PartyViewController: UIViewController {
     var selectedMemberIndex: Int?
     var backupTypeMap: Dictionary<String, Int>?
     
+    var selectedTypeIndex: Int?
+    
     @IBAction func flipToggle(_ sender: UISegmentedControl) {
         resetMatchupDictionary()
         clearLabelBackgrounds()
@@ -131,6 +133,30 @@ class PartyViewController: UIViewController {
         }
     }
     
+    @IBAction func checkType(_ sender: UIButton) {
+        clearPartyBackgrounds()
+        
+        if selectedTypeIndex != sender.tag {
+            selectedTypeIndex = sender.tag
+            if strengthsWeaknesses.selectedSegmentIndex == 0 {
+                // do something with attack
+                
+                for item in partyImageButtons {
+                    item.backgroundColor = .yellow
+                }
+            } else if strengthsWeaknesses.selectedSegmentIndex == 1 {
+                // do something with defense
+                
+                for item in partyImageButtons {
+                    item.backgroundColor = .yellow
+                }
+            }
+        } else {
+            selectedTypeIndex = nil
+            
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupArrays()
@@ -152,7 +178,6 @@ class PartyViewController: UIViewController {
         }
         
         checkAttackers()
-        updateTypeLabels()
     }
     
     func updateTypeLabels() {
@@ -220,6 +245,12 @@ class PartyViewController: UIViewController {
     func clearLabelBackgrounds() {
         for label in TypeLabel {
             label.backgroundColor = .clear
+        }
+    }
+    
+    func clearPartyBackgrounds() {
+        for button in partyImageButtons {
+            button.backgroundColor = .clear
         }
     }
     
@@ -359,6 +390,8 @@ class PartyViewController: UIViewController {
                      TypeLabel13, TypeLabel14, TypeLabel15,
                      TypeLabel16, TypeLabel17, TypeLabel18]
         resetMatchupDictionary()
+        clearLabelBackgrounds()
+        clearPartyBackgrounds()
     }
     
 }

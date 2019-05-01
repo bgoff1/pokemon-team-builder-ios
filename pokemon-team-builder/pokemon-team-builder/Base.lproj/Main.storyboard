@@ -201,6 +201,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="NFG-Tb-66H"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3A9-aV-z5p" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="45" width="77.5" height="30"/>
@@ -211,6 +214,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="bUF-x9-i7o"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcY-8d-1Sp" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="90" width="77.5" height="30"/>
@@ -221,6 +227,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="7XA-un-xQY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAU-66-6Ef" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="135" width="77.5" height="30"/>
@@ -231,6 +240,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="Soj-Ut-HsV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgY-gJ-rcN" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="180" width="77.5" height="30"/>
@@ -241,6 +253,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="SYQ-qE-0Oo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ6-0k-hNT" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="225" width="77.5" height="30"/>
@@ -251,6 +266,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="4Jh-yf-aSM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eG-XM-paq" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="270" width="77.5" height="30"/>
@@ -261,6 +279,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="uHj-Ro-Zlw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJM-td-2ii" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="315" width="77.5" height="30"/>
@@ -271,6 +292,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="eo4-m0-ivV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr8-Pc-PPr" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="360" width="77.5" height="30"/>
@@ -281,6 +305,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="NOg-MV-mhQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <rect key="contentStretch" x="0.10000000000000001" y="0.0" width="1" height="1"/>
@@ -356,6 +383,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="BaO-fm-ByM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51C-5K-SKs" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="45" width="77.5" height="30"/>
@@ -366,6 +396,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="CGW-hQ-yFZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsc-CN-lyI" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="90" width="77.5" height="30"/>
@@ -376,6 +409,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="NES-xp-eq9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSv-Mc-hXH" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="135" width="77.5" height="30"/>
@@ -386,6 +422,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="9gK-qZ-Y1H"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkH-Gc-0uf" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="180" width="77.5" height="30"/>
@@ -396,6 +435,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="Qti-Pa-wFK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rB-lX-Kgj" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="225" width="77.5" height="30"/>
@@ -406,6 +448,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="nr2-rb-tF5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCa-OZ-uXj" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="270" width="77.5" height="30"/>
@@ -416,6 +461,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="Rgm-5A-eeb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pf-6J-TNt" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="315" width="77.5" height="30"/>
@@ -426,6 +474,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="01O-La-xKh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUa-6Y-Jvy" customClass="RoundedButton" customModule="pokemon_team_builder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="360" width="77.5" height="30"/>
@@ -436,6 +487,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkType:" destination="0W7-PH-FJ2" eventType="touchUpInside" id="Thw-51-Vmt"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -684,7 +738,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="CollectionViewCell" id="HDw-Z6-8gQ">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="HDw-Z6-8gQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
