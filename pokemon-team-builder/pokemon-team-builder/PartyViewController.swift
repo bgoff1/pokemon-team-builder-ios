@@ -140,15 +140,15 @@ class PartyViewController: UIViewController {
             selectedTypeIndex = sender.tag
             if strengthsWeaknesses.selectedSegmentIndex == 0 {
                 // do something with attack
-                
-                for item in partyImageButtons {
-                    item.backgroundColor = .yellow
+                let membersToHighlight = lightEffectedAttackers(sender.tag)
+                for item in membersToHighlight {
+                    partyImageButtons[item].backgroundColor = .yellow
                 }
             } else if strengthsWeaknesses.selectedSegmentIndex == 1 {
                 // do something with defense
-                
-                for item in partyImageButtons {
-                    item.backgroundColor = .yellow
+                let membersToHighlight = lightEffectedDefenders(sender.tag)
+                for item in membersToHighlight {
+                    partyImageButtons[item].backgroundColor = .yellow
                 }
             }
         } else {
@@ -178,6 +178,49 @@ class PartyViewController: UIViewController {
         }
         
         checkAttackers()
+    }
+    
+    func lightEffectedAttackers(_ tag: Int) -> [Int] {
+        var result: [Int] = []
+        var index = 0
+        // for each party member
+        for partyMember in party.getParty() {
+            // for each member's type
+            for type in partyMember.types {
+                // if the type exists
+                if type.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
+                    for mult in typesMap.typesChart[type]! {
+                        if mult.key == getTypeFromTag(tag) {
+                            result.append(index)
+                        }
+                    }
+                }
+            }
+            index = index + 1
+        }
+        return result
+    }
+    
+    func lightEffectedDefenders(_ tag: Int) -> [Int] {
+        var result: [Int] = []
+        var index = 0
+        // for each party member
+        for partyMember in party.getParty() {
+            // for each of their types
+            for type in partyMember.types {
+                if type.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
+                    for mult in typesMap.typesChart {
+                        for m in mult.value {
+                            if m.key == type && mult.key == getTypeFromTag(tag){
+                                result.append(index)
+                            }
+                        }
+                    }
+                }
+            }
+            index = index + 1
+        }
+        return result
     }
     
     func updateTypeLabels() {
@@ -318,48 +361,6 @@ class PartyViewController: UIViewController {
             checkOneDefender(item)
         }
         updateTypeLabels()
-    }
-    
-    func getTagName(_ type: String) -> Int {
-        switch (type) {
-        case "Normal":
-            return 0
-        case "Fire":
-            return 9
-        case "Water":
-            return 10
-        case "Electric":
-            return 12
-        case "Grass":
-            return 11
-        case "Ice":
-            return 14
-        case "Fighting":
-            return 1
-        case "Poison":
-            return 3
-        case "Ground":
-            return 4
-        case "Flying":
-            return 2
-        case "Psychic":
-            return 13
-        case "Bug":
-            return 6
-        case "Rock":
-            return 5
-        case "Ghost":
-            return 7
-        case "Dragon":
-            return 15
-        case "Dark":
-            return 16
-        case "Steel":
-            return 8
-        case "Fairy":
-            return 17
-        default: return -1
-        }
     }
     
     func setupArrays(){
